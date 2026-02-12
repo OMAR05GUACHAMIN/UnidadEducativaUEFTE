@@ -1,0 +1,138 @@
+/* ===============================
+   NAVBAR ANIMADO PROFESIONAL
+================================ */
+
+/* Navbar base */
+.navbar-custom {
+  background-color: #0d47a1; /* azul institucional */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: navbarFadeDown 0.8s ease forwards;
+
+  /* 🔑 CLAVE para que esté encima */
+  position: relative;
+  z-index: 1000;
+}
+
+/* Animación de entrada */
+@keyframes navbarFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   LOGO
+================================ */
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom suave al logo */
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.1);
+}
+
+/* Texto marca */
+.navbar-brand span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* ===============================
+   LINKS CON UNDERLINE ANIMADO
+================================ */
+
+.navbar-custom .nav-link {
+  position: relative;
+  color: #ffffff !important;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Línea animada */
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #ffd700; /* dorado */
+  transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* ===============================
+   DROPDOWN ANIMADO (CORREGIDO)
+================================ */
+
+.dropdown-menu {
+  border-radius: 10px;
+  animation: dropdownFade 0.4s ease;
+
+  /* 🔑 MUY IMPORTANTE */
+  z-index: 2000 !important;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Evita transparencia y bloqueos */
+.dropdown-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Animación */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Items */
+.dropdown-item {
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+  color: #0d47a1;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #0d47a1;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+/* ===============================
+   RESPONSIVE FIX
+================================ */
+
+@media (max-width: 991px) {
+  .dropdown-menu {
+    box-shadow: none;
+  }
+}

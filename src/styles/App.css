@@ -1,0 +1,87 @@
+/* =====================================
+   VARIABLES INSTITUCIONALES
+===================================== */
+:root {
+  --azul-institucional: #0d47a1;
+  --dorado-institucional: #ffd700;
+}
+
+/* =====================================
+   FOOTER GENERAL
+===================================== */
+.footer-bottom {
+  background-color: var(--azul-institucional);
+  width: 100%;
+}
+
+/* Parte superior */
+.footer-top {
+  background-color: var(--azul-institucional);
+  gap: 40px;
+}
+
+/* Títulos */
+.footer-brand h2,
+.footer-contact h3,
+.footer-map h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Texto */
+.footer-brand p,
+.footer-contact p {
+  color: #e3e3e3;
+  line-height: 1.6;
+}
+
+/* Íconos dentro del texto */
+.footer-contact svg {
+  margin-right: 8px;
+  color: var(--dorado-institucional);
+}
+
+/* Mapa */
+.footer-map iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* =====================================
+   REDES SOCIALES
+===================================== */
+.footer-social {
+  background-color: #0b3c91;
+}
+
+.footer-social a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--dorado-institucional);
+  transform: scale(1.2);
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 768px) {
+  .footer-top {
+    text-align: center;
+  }
+
+  .footer-map iframe {
+    height: 200px;
+  }
+}

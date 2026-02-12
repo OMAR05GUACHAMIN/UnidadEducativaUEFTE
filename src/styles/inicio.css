@@ -1,0 +1,89 @@
+/* Banner slider */
+.carousel-image {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen decorativa detrás del texto */
+.banner-decorative-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* clave para cubrir sin deformar */
+  opacity: 0.80;       /* ajusta si deseas más claridad */
+  z-index: 1;
+  animation: zoomSlow 25s ease-in-out infinite alternate;
+}
+
+/* Animación de zoom y leve movimiento */
+@keyframes floatZoom {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-48%, -52%) scale(1.05);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  z-index: 2; /* por encima de la imagen decorativa */
+}
+
+/* Fade-in animación para títulos y botones */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Valores animación al hacer scroll */
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+
+.fade-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Opcional: estilo de cards de valores */
+.value-card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
