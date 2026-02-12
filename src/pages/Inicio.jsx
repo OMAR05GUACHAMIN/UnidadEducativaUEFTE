@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import portadaImg from "../assets/images/inicioPortada.jpg";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import "../styles/Inicio.css"; // CSS personalizado
+import "../styles/inicio.css"; // CSS personalizado
 
 function Inicio() {
 

@@ -23,7 +23,7 @@ function Rectora() {
                 alt="Rectora"
                 className="autoridad-img"
               />
-              <h4 className="mt-3">Lcda. Nombre Apellido</h4>
+              <h4 className="mt-3">Sor. Nancy Pinzón</h4>
               <span className="autoridad-cargo">Rectora</span>
             </div>
           </div>

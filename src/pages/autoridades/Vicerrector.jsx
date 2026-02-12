@@ -23,8 +23,8 @@ function Vicerrector() {
                 alt="Rectora"
                 className="autoridad-img"
               />
-              <h4 className="mt-3">Lcda. Nombre Apellido</h4>
-              <span className="autoridad-cargo">Rectora</span>
+              <h4 className="mt-3">Msc. Richard Gaibor</h4>
+              <span className="autoridad-cargo">Vicerrector</span>
             </div>
           </div>
         </div>
