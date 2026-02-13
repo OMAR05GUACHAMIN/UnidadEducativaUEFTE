@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import portadaImg from "../assets/images/inicioPortada.jpg";
+import inicioPortada2 from "../assets/images/inicioPortada2.jpg";
+
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import "../styles/inicio.css"; // CSS personalizado
 
@@ -41,7 +43,8 @@ function Inicio() {
           </div>
 
           <div className="carousel-item">
-            <div className="carousel-image" style={{ backgroundImage: "url('/images/banner2.jpg')" }}>
+            <div className="carousel-image" style={{ backgroundImage: `url(${inicioPortada2})` }}>
+              <div className="overlay"></div>
               <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
                 <h1 className="fade-in">Educación con Valores Cristianos</h1>
                 <p className="fade-in delay-1">Excelencia académica y formación integral</p>

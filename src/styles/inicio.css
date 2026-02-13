@@ -7,6 +7,13 @@
   overflow: hidden;
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0,1n); /* 🔽 baja contraste */
+  z-index: 1;
+}
+
 /* Imagen decorativa detrás del texto */
 .banner-decorative-img {
   position: absolute;
