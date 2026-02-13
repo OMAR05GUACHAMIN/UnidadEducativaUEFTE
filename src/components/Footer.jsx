@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="footer-map">
           <h3>Ubicación</h3>
           <iframe
-            src="https://www.google.com/maps?q=Mindo,Ecuador&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467.7240923865671!2d-78.7776420692319!3d-0.050907454356938636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d57df22f5f8e59%3A0x5041d241c8ef888c!2sColegio%20Mindo%20(UEFTE)!5e0!3m2!1ses!2sec!4v1770997905347!5m2!1ses!2sec"
             loading="lazy"
             title="Ubicación Unidad Educativa Técnico Ecuador"
           ></iframe>
